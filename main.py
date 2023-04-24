@@ -1,7 +1,7 @@
 from flask import Flask, render_template, session, redirect, url_for
 from flask import request, jsonify
 import numpy as np
-import pickle
+import joblib
 from tensorflow.keras.models import load_model
 from FlowerForm import FlowerForm
 import os
@@ -78,7 +78,7 @@ def index():
 # serializar es el proceso de convertir un objeto en una secuencia de bytes para almacenarlo o transmitirlo a la memoria, un archivo o una base de datos.
 # joblib.load() es una función que carga un archivo serializado.
 iris_model = load_model('final_iris_model.h5')
-iris_scaler = pickle.load(open('iris_scaler.pkl', 'rb'))
+iris_scaler = joblib.load('iris_scaler.pkl')
 
 
 @app.route('/prediction')
