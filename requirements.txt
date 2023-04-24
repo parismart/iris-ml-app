@@ -10,3 +10,4 @@ Flask-WTF==0.14.3
 WTForms==2.3.3
 tensorflow==2.7.0
 joblib==1.0.1
+protobuf>=3.19.0
