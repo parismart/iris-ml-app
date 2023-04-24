@@ -77,7 +77,7 @@ def index():
 # joblib es una biblioteca de Python que proporciona herramientas para serializar y deserializar objetos de Python.
 # serializar es el proceso de convertir un objeto en una secuencia de bytes para almacenarlo o transmitirlo a la memoria, un archivo o una base de datos.
 # joblib.load() es una función que carga un archivo serializado.
-iris_model = keras.models.load_model('final_iris_model.h5')
+iris_model = load_model('final_iris_model.h5')
 iris_scaler = pickle.load(open('iris_scaler.pkl', 'rb'))
 
 
