@@ -10,3 +10,5 @@ WTForms==2.3.3
 joblib==1.0.1
 numpy
 tensorflow
+scikit-learn
+h5py
