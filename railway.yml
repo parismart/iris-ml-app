@@ -1,5 +1,0 @@
-name: mi-aplicacion
-services:
-  web:
-    build: .
-    command: python app.py
