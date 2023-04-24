@@ -1,7 +1,6 @@
 from flask import Flask, render_template, session, redirect, url_for
 from flask import request, jsonify
 import numpy as np
-from tensorflow.keras.models import load_model
 import joblib
 
 from FlowerForm import FlowerForm
