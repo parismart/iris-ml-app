@@ -2,7 +2,7 @@ from flask import Flask, render_template, session, redirect, url_for
 from flask import request, jsonify
 import numpy as np
 import pickle
-from tensorflow import keras
+from tensorflow.keras.models import load_model
 from FlowerForm import FlowerForm
 import os
 
@@ -77,7 +77,7 @@ def index():
 # joblib es una biblioteca de Python que proporciona herramientas para serializar y deserializar objetos de Python.
 # serializar es el proceso de convertir un objeto en una secuencia de bytes para almacenarlo o transmitirlo a la memoria, un archivo o una base de datos.
 # joblib.load() es una función que carga un archivo serializado.
-iris_model = pickle.load(open('final_iris_model.pkl', 'rb'))
+iris_model = keras.models.load_model('final_iris_model.h5')
 iris_scaler = pickle.load(open('iris_scaler.pkl', 'rb'))
 
 
