@@ -18,6 +18,9 @@ This is a [Flask](https://flask.palletsprojects.com/en/1.1.x/) app that serves a
 - Python
 - Flask
 
+## Iris Flower REST API Endpoint
+/api/iris POST: get the flower prediction
+
 ## 💁‍♀️ How to use
 
 - Install Python requirements `pip install -r requirements.txt`
